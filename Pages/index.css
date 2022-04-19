@@ -1,3 +1,33 @@
+body {
+    background-color: beige;
+}
+
 header {
     position: absolute;
+    background-color: aqua;
+    width: 100vw;
+    height: 10vh;
+}
+
+header div span {
+    font-size: 33pt;
+    margin-left: 10%;
+    font-style: oblique;
+}
+
+header div {
+    margin-left: 0vw;
+    height: 10vh;
+    width: 100vw;
+    font-size: 35pt;
+    float: left;
+    background-color: blanchedalmond;
+}
+
+header div a img {
+    height: 5vh;
+    width: 3vw;
+    margin-right: 10vw;
+    float: right;
+    margin-top: 1%;
 }
