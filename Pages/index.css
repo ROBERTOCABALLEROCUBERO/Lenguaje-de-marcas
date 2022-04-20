@@ -67,8 +67,11 @@ img {
 
 .main {
     margin: auto;
+    display: grid;
     width: 80vw;
     height: 80vh;
-    display: grid;
-    grid-template-columns: repeat(2, lfr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 26px;
+    grid-row-gap: 10px;
 }
