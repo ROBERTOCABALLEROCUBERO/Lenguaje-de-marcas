@@ -61,8 +61,9 @@ body {
 }
 
 img {
-    width: 250px;
-    height: 350px;
+    width: 50vw;
+    height: auto;
+    margin-left: 10%;
 }
 
 .main {
@@ -72,6 +73,16 @@ img {
     height: 80vh;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 26px;
+    grid-row-gap: 10px;
+}
+
+.contact-details {
+    margin: auto;
+    display: grid;
+    width: 80vw;
+    height: 80vh;
+    grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 26px;
     grid-row-gap: 10px;
 }
