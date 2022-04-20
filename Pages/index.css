@@ -1,33 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Content box no. El valor border-box en el box-sizing hace que el padding y el border pasen a formar parte del cálculo del ancho de la caja y no lo suman posteriormente.*/
+}
+
 body {
-    background-color: beige;
+    font-family: 'Roboto Mono', monospace;
 }
 
-header {
-    position: absolute;
-    background-color: aqua;
+.wrapper {
     width: 100vw;
-    height: 10vh;
+    height: 100vh;
+    background-color: rgb(2, 2, 100);
+    color: white;
 }
 
-header div span {
-    font-size: 33pt;
-    margin-left: 10%;
-    font-style: oblique;
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
 }
 
-header div {
-    margin-left: 0vw;
-    height: 10vh;
-    width: 100vw;
-    font-size: 35pt;
-    float: left;
-    background-color: blanchedalmond;
+.brand span {
+    color: yellow;
 }
 
-header div a img {
-    height: 5vh;
-    width: 3vw;
-    margin-right: 10vw;
-    float: right;
-    margin-top: 1%;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    /*Separar las letras de la lista del menú de navegación*/
+    padding: 2em;
+    /*Establece un espacio de separacion en relacion al tamaño de la tipografía*/
+}
+
+.menu {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    /*Espacio entre elementos del menu*/
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu .active {
+    color: yellow
+}
+
+.menu a:hover {
+    background-color: rgb(56, 139, 145);
+    color: rgb(2, 2, 100);
+    transition: ease-in .4s;
+    /*.4s es para hacer un delay dentro de la transición como una especie de animación*/
+}
+
+.brand {
+    margin-top: -7px;
+}
+
+img {
+    width: 250px;
+    height: 350px;
 }
