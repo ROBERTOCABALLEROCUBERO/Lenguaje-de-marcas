@@ -46,12 +46,12 @@ body {
 }
 
 .menu .active {
-    color: yellow
+    color: rgb(17, 0, 92)
 }
 
 .menu a:hover {
     background-color: rgb(56, 139, 145);
-    color: rgb(2, 2, 100);
+    color: rgb(226, 226, 226);
     transition: ease-in .4s;
     /*.4s es para hacer un delay dentro de la transición como una especie de animación*/
 }
