@@ -5,7 +5,7 @@
 }
 
 html {
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 
 header {
@@ -139,48 +139,10 @@ section {
     font-weight: 600;
 }
 
+.container-grid {}
+
 
 /* -------------------------------- */
-
-@media(max-width: 768px) {
-    .mostrar-menu,
-    .esconder-menu {
-        display: block;
-    }
-    .menu {
-        position: fixed;
-        width: 100vw;
-        height: 100vh;
-        background-color: gray;
-        right: -190%;
-        top: 0%;
-        text-align: center;
-        z-index: 100;
-        padding: 100px 0;
-        transition: 1s;
-    }
-    .menu a {
-        display: block;
-        padding: 20px;
-    }
-    .esconder-menu {
-        position: absolute;
-        top: 40px;
-        right: 40px;
-    }
-    #check:checked~.menu {
-        right: 0;
-    }
-    .contact_form {
-        position: relative;
-        width: 60vw;
-    }
-    .formulario {
-        position: absolute;
-        width: 60vw;
-        left: -5%;
-    }
-}
 
 .contact_form {
     width: 460px;
@@ -274,4 +236,93 @@ p {
 .formulario textarea:focus {
     outline: 0;
     border: 1px solid #97d848;
+}
+
+@media(max-width: 375px) {
+    .mostrar-menu,
+    .esconder-menu {
+        display: block;
+    }
+    .menu {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background-color: gray;
+        right: -190%;
+        top: 0%;
+        text-align: center;
+        z-index: 100;
+        padding: 100px 0;
+        transition: 1s;
+    }
+    .menu a {
+        display: block;
+        padding: 20px;
+    }
+    .esconder-menu {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+    #check:checked~.menu {
+        right: 0;
+    }
+    .contact_form {
+        position: relative;
+        width: 60vw;
+    }
+    .formulario {
+        position: absolute;
+        width: 60vw;
+    }
+    input,
+    textarea,
+    #enviar {
+        width: 70vw;
+    }
+}
+
+@media(max-width: 768px) {
+    .mostrar-menu,
+    .esconder-menu {
+        display: block;
+    }
+    .menu {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background-color: gray;
+        right: -190%;
+        top: 0%;
+        text-align: center;
+        z-index: 100;
+        padding: 100px 0;
+        transition: 1s;
+    }
+    .menu a {
+        display: block;
+        padding: 20px;
+    }
+    .esconder-menu {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+    #check:checked~.menu {
+        right: 0;
+    }
+    .contact_form {
+        position: relative;
+        width: 60vw;
+    }
+    .formulario {
+        position: absolute;
+        width: 60vw;
+        left: -5%;
+    }
+    input,
+    textarea,
+    #enviar {
+        width: 68vw;
+    }
 }
