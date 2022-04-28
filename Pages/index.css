@@ -52,7 +52,40 @@ header {
     display: none;
 }
 
+section {
+    padding: 0 50px;
+}
+
 
 /* -------------------------------- */
 
-@media(max-width: 750px) {}
+@media(max-width: 768px) {
+    .mostrar-menu,
+    .esconder-menu {
+        display: block;
+    }
+    .menu {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background-color: gray;
+        right: -100%;
+        top: 0%;
+        text-align: center;
+        z-index: 100;
+        padding: 100px 0;
+        transition: 1s;
+    }
+    .menu a {
+        display: block;
+        padding: 20px;
+    }
+    .esconder-menu {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+    #check:checked~.menu {
+        right: 0;
+    }
+}
