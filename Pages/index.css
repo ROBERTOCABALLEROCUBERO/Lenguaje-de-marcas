@@ -1,88 +1,58 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    /* Content box no. El valor border-box en el box-sizing hace que el padding y el border pasen a formar parte del cálculo del ancho de la caja y no lo suman posteriormente.*/
-}
-
-body {
     font-family: 'Roboto Mono', monospace;
 }
 
-.wrapper {
-    width: 100vw;
-    height: 100vh;
-    background-color: rgb(2, 2, 100);
+header {
+    height: 100px;
+    background-color: gray;
+    padding: 50px;
     color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    text-transform: uppercase;
+    color: aquamarine;
 }
 
 .menu a {
     color: white;
+    text-transform: uppercase;
     text-decoration: none;
     padding: 10px;
-}
-
-.brand span {
-    color: yellow;
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    /*Separar las letras de la lista del menú de navegación*/
-    padding: 2em;
-    /*Establece un espacio de separacion en relacion al tamaño de la tipografía*/
-}
-
-.menu {
-    display: flex;
-    width: 50%;
-    justify-content: space-around;
-    /*Espacio entre elementos del menu*/
-}
-
-.menu li {
-    list-style: none;
-}
-
-.menu .active {
-    color: rgb(17, 0, 92)
+    transition: 00.4s;
 }
 
 .menu a:hover {
-    background-color: rgb(56, 139, 145);
-    color: rgb(226, 226, 226);
-    transition: ease-in .4s;
-    /*.4s es para hacer un delay dentro de la transición como una especie de animación*/
+    color: aquamarine;
 }
 
-.brand {
-    margin-top: -7px;
+.mostrar-menu,
+.esconder-menu {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    transition: 0.4s;
 }
 
-img {
-    width: 50vw;
-    height: auto;
-    margin-left: 10%;
+.mostrar-menu {
+    order: 1;
 }
 
-.main {
-    margin: auto;
-    display: grid;
-    width: 80vw;
-    height: 80vh;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 26px;
-    grid-row-gap: 10px;
+.mostrar-menu:hover,
+.esconder-menu:hover {
+    color: aquamarine;
 }
 
-.contact-details {
-    margin: auto;
-    display: grid;
-    width: 80vw;
-    height: 80vh;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 26px;
-    grid-row-gap: 10px;
+#check {
+    display: none;
 }
+
+
+/* -------------------------------- */
+
+@media(max-width: 750px) {}
