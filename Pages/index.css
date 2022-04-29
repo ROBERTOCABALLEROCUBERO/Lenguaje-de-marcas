@@ -5,7 +5,7 @@
 }
 
 html {
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 header {
@@ -139,7 +139,41 @@ section {
     font-weight: 600;
 }
 
-.container-grid {}
+footer {
+    height: 40vh;
+    background-color: #ab4493;
+}
+
+.container-grid h4 {
+    margin-top: 5%;
+    text-align: center;
+}
+
+.container-grid img {
+    margin: auto;
+    display: block;
+}
+
+.container-grid p {
+    text-align: center;
+    margin: auto;
+    margin-top: 3%;
+}
+
+.container-grid {
+    width: 100%;
+    height: 30vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 20px;
+    background-color: #ab4493;
+}
+
+#Fondosec {
+    background-color: gray;
+    display: flex;
+}
 
 
 /* -------------------------------- */
@@ -272,13 +306,26 @@ p {
         width: 60vw;
     }
     .formulario {
-        position: absolute;
-        width: 60vw;
+        width: 100vw;
+        height: 100vh;
+    }
+    #Fondosec {
+        background-color: gray;
+        display: flex;
+        height: 100vh;
     }
     input,
     textarea,
     #enviar {
         width: 70vw;
+    }
+    .container-grid {
+        width: 100%;
+        height: 30vh;
+    }
+    footer {
+        height: 70vh;
+        background-color: #ab4493;
     }
 }
 
@@ -311,18 +358,32 @@ p {
     #check:checked~.menu {
         right: 0;
     }
-    .contact_form {
+    #Fondosec {
+        background-color: gray;
+        height: 170vh;
         position: relative;
+    }
+    .contact_form {
         width: 60vw;
     }
     .formulario {
+        width: 50vw;
+        height: 149vh;
         position: absolute;
-        width: 60vw;
-        left: -5%;
+        margin: auto;
+        left: 5%;
     }
     input,
     textarea,
     #enviar {
         width: 68vw;
+    }
+    footer {
+        height: 50vh;
+        background-color: #ab4493;
+    }
+    .container-grid {
+        width: 100%;
+        height: 30vh;
     }
 }
