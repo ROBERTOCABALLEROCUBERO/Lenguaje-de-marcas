@@ -53,6 +53,9 @@ header {
     color: aquamarine;
 }
 
+
+/* La etiqueta que me permitira abrir y cerrar el menu */
+
 .mostrar-menu,
 .esconder-menu {
     font-size: 30px;
@@ -61,22 +64,31 @@ header {
     transition: 0.4s;
 }
 
-.mostrar-menu {
-    order: 1;
-}
+
+/* Cambio de color en la hamburguesa cuando se muestra */
 
 .mostrar-menu:hover,
 .esconder-menu:hover {
     color: aquamarine;
 }
 
+
+/* Ocultar el input que realiza la acción */
+
 #check {
     display: none;
 }
 
+
+/* Ajusto para que se vea cuadriculado */
+
 section {
     padding: 0 50px;
 }
+
+
+/* Uso una foto de fondo para mostrar como un branding con un boton y con cover 
+en background size/position hago que se adapte */
 
 #banner {
     padding: 0 50px;
@@ -87,12 +99,47 @@ section {
     background-position: center;
 }
 
-#banner::before {
-    content: '';
-    position: absolute;
-    width: 89%;
-    height: 45vh;
+.contenido-banner {
+    position: relative;
+    color: rgb(0, 92, 104);
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
+
+/* Ajusto todos los elementos a sus bases */
+
+.boton {
+    text-decoration: none;
+    color: rgb(0, 120, 136);
+    border: solid aquamarine;
+    padding: 20px 40px;
+    align-self: baseline;
+}
+
+
+/* Diferentes complementos al aspecto */
+
+.boton:hover {
+    background-color: aquamarine;
+    transition: 0.5s;
+}
+
+.contenido-banner h3 {
+    font-size: 30px;
+    font-weight: 400;
+    padding: 10px 0px;
+}
+
+.contenido-banner h3 span {
+    font-weight: 600;
+}
+
+
+/* Ajusto dos iconos con dos botones con flex los centro y posteriormente con el padding lo maqueto y complemento en las siguientes acciones*/
 
 #valores {
     padding: 50px 50px;
@@ -125,80 +172,13 @@ section {
     border: solid rgb(0, 43, 0);
 }
 
-.contenido-banner {
-    position: relative;
-    color: rgb(0, 92, 104);
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
 
-.boton {
-    text-decoration: none;
-    color: rgb(0, 120, 136);
-    border: solid aquamarine;
-    padding: 20px 40px;
-    align-self: baseline;
-}
-
-.boton:hover {
-    background-color: aquamarine;
-    transition: 0.5s;
-}
-
-.contenido-banner h3 {
-    font-size: 30px;
-    font-weight: 400;
-    padding: 10px 0px;
-}
-
-.contenido-banner h3 span {
-    font-weight: 600;
-}
-
-footer {
-    height: 40vh;
-    background-color: #ab4493;
-}
-
-.container-grid h4 {
-    margin-top: 5%;
-    text-align: center;
-}
-
-.container-grid img {
-    margin: auto;
-    display: block;
-}
-
-.container-grid p {
-    text-align: center;
-    margin: auto;
-    margin-top: 3%;
-}
-
-.container-grid {
-    width: 100%;
-    height: 30vh;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 5px;
-    grid-row-gap: 20px;
-    background-color: #ab4493;
-}
-
-#Fondosec {
-    background-color: gray;
-    display: flex;
-}
-
-
-/* -------------------------------- */
+/* Estilos del formulario */
 
 .contact_form {
     width: 460px;
     height: auto;
+    /* Lo centro y le doy margenes para el futuro diseño responsive */
     margin: 80px auto;
     border-radius: 10px;
     padding-top: 30px;
@@ -210,7 +190,6 @@ input {
     background-color: #fbfbfb;
     width: 408px;
     height: 40px;
-    border-radius: 5px;
     border-style: solid;
     border-width: 1px;
     border-color: #ab4493;
@@ -233,10 +212,16 @@ textarea {
     padding-top: 15px;
 }
 
+
+/* Block para poner una cosa debajo de la otra y que quede centrado dentro de la propia estructura del formulario */
+
 label {
     display: block;
     float: center;
 }
+
+
+/* Estilos al boton */
 
 button {
     height: 45px;
@@ -250,6 +235,7 @@ button {
     border-style: solid;
     border-radius: 10px;
     width: 420px;
+    /* Cambio el cursor a la mano de pulsar o no se como decirlo */
     cursor: pointer;
 }
 
@@ -262,12 +248,26 @@ button p {
     color: #0e0e0e;
 }
 
+
+/* Cabecera del formulario */
+
 h1 {
     font-size: 39px;
-    text-align: letf;
+    text-align: left;
     padding-bottom: 20px;
     color: #ab4493;
 }
+
+
+/* Color de fondo con flex para evitar errores en el responsive */
+
+#Fondosec {
+    background-color: gray;
+    display: flex;
+}
+
+
+/* Subtitulo */
 
 h3 {
     font-size: 16px;
@@ -280,6 +280,9 @@ p {
     color: #0e0e0e;
 }
 
+
+/* Cambio el color de los bordes dentro de las cajas de texto */
+
 .formulario input:focus {
     outline: 0;
     border: 1px solid #97d848;
@@ -290,11 +293,65 @@ p {
     border: 1px solid #97d848;
 }
 
+
+/* Footer grid */
+
+footer {
+    height: 40vh;
+    background-color: #ab4493;
+}
+
+
+/* Contenedor grid con  tres columnas y las filas indeterminadas por lo que será una.
+Dejo espacios a los lados de las cajas*/
+
+.container-grid {
+    width: 100%;
+    height: 30vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 20px;
+}
+
+
+/* Estilos dentro del grid para cuadrar los elementos */
+
+.container-grid h4 {
+    margin-top: 5%;
+    text-align: center;
+}
+
+.container-grid img {
+    margin: auto;
+    display: block;
+}
+
+.container-grid p {
+    text-align: center;
+    margin: auto;
+    margin-top: 3%;
+}
+
+
+/* --------------------------------
+--------------------------------------
+---------------------------------------
+----------------------------------------
+-------------VERSION MOVIL---------------
+--------------------------------------
+-----------------------------------
+---------------------------------*/
+
+
+/* Lo he probado con las herramientas de mozilla */
+
 @media(max-width: 375px) {
     .mostrar-menu,
     .esconder-menu {
         display: block;
     }
+    /*Traigo de la derecha de la pagina al pulsar la etiqueta y lo pongo que ocupe toda la panta y que cuando se pulse la x se cierre el menu. El display block para que los enlaces se coloquen correctamente con una transicion de 1 segundo*/
     .menu {
         position: fixed;
         width: 100vw;
@@ -314,15 +371,19 @@ p {
     .esconder-menu {
         position: absolute;
         top: 40px;
-        right: 40px;
+        right: 20px;
     }
     #check:checked~.menu {
         right: 0;
     }
+    /* Aquí terminan los elementos del menu responsive que tengo que investigar algo más para entender como se consigue el efecto a traves de una pseudo animacion con la etiqueta */
+    /* ---------------------------- */
+    /* Estilos del formulario responsive */
     .contact_form {
         position: relative;
         width: 60vw;
     }
+    /* Aqui me encontre con un problema claro entre el descuadre de la section con el formulario que solvento en el siguiente media query */
     .formulario {
         width: 100vw;
         height: 100vh;
@@ -332,6 +393,7 @@ p {
         display: flex;
         height: 100vh;
     }
+    /* Ajusto tamaños en el formulario y en el grid*/
     input,
     textarea,
     #enviar {
@@ -352,6 +414,7 @@ p {
     .esconder-menu {
         display: block;
     }
+    /* Lo mismo que arriba */
     .menu {
         position: fixed;
         width: 100vw;
@@ -384,6 +447,7 @@ p {
     .contact_form {
         width: 60vw;
     }
+    /* Tuve muchos problemas para colocar un formulario dentro de la caja que le tenía asignada. por lo que tuve que aumentar y maquetar los elementos dentro de los espacios ya en un principio el grid del footer se superponía, pero eso era porque los tamaños no eran correctos y surgian incompatibilidades entre secciones.*/
     .formulario {
         width: 50vw;
         height: 149vh;
