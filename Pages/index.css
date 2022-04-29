@@ -1,12 +1,21 @@
+/* Hago un reset de todo */
+
 * {
     margin: 0;
     padding: 0;
     font-family: 'Roboto Mono', monospace;
 }
 
+
+/* Elimino la barra horizontal, aunque no es necesario */
+
 html {
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
+
+
+/* Header que es flex con una altura determinada en px con espacio entre los objetos dentro y con align items
+en el responsive  */
 
 header {
     height: 100px;
@@ -18,10 +27,16 @@ header {
     align-items: center;
 }
 
+
+/* La palabra Yahoo porque no sabia que poner de logo la verdad */
+
 .logo {
     text-transform: uppercase;
     color: aquamarine;
 }
+
+
+/* Enlaces del menu con transicion*/
 
 .menu a {
     color: white;
@@ -30,6 +45,9 @@ header {
     padding: 0 10px;
     transition: 00.4s;
 }
+
+
+/* Cambio de color */
 
 .menu a:hover {
     color: aquamarine;
