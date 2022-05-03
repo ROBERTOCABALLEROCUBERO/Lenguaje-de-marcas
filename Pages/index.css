@@ -13,6 +13,7 @@ html {
     overflow-x: hidden;
 }
 
+<<<<<<< Updated upstream
 
 /* Header que es flex con una altura determinada en px con espacio entre los objetos dentro y con align items
 en el responsive  */
@@ -21,6 +22,12 @@ header {
     height: 100px;
     background-color: gray;
     padding: 10px 50px;
+=======
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(56, 139, 145);
+>>>>>>> Stashed changes
     color: white;
     display: flex;
     justify-content: space-between;
@@ -79,11 +86,16 @@ header {
     display: none;
 }
 
+<<<<<<< Updated upstream
 
 /* Ajusto para que se vea cuadriculado */
 
 section {
     padding: 0 50px;
+=======
+.brand span {
+    color: rgb(228, 83, 0);
+>>>>>>> Stashed changes
 }
 
 
@@ -152,6 +164,7 @@ en background size/position hago que se adapte */
     padding: 30px 30px;
 }
 
+<<<<<<< Updated upstream
 #valores div h4 {
     color: black;
     font-size: 20px;
@@ -162,6 +175,14 @@ en background size/position hago que se adapte */
     color: black;
     font-size: 15px;
     margin: 15px 0px;
+=======
+
+.menu a:hover {
+    background-color: rgb(0, 1, 70);
+    color: rgb(226, 226, 226);
+    transition: ease-in .4s;
+    /*.4s es para hacer un delay dentro de la transición como una especie de animación*/
+>>>>>>> Stashed changes
 }
 
 #valores div a {
