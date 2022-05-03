@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo</title>
+    <link rel="stylesheet" href="Pages/index.css">
+<!-- Link pagina github : https://robertocaballerocubero.github.io/Lenguaje-de-marcas/ -->
+</head>
+
+<body>
+    <!-- Header flex -->
+    <header>
+        <h2 class="logo">Yahoo!</h2>
+        <input type="checkbox" id="check">
+        <label for="check" class="mostrar-menu">
+            &#8801
+            <!--     hambuguesa de menu -->
+        </label>
+        <nav class="menu">
+            <a href="">Inicio</a>
+            <a href="#Contacto">Contacto</a>
+            <a href="#formulario1">Formulario</a>
+            <a href="#valores">Valores</a>
+
+            <label for="check" class="esconder-menu">
+                &#215
+                <!--  cerrar hamburguesa -->
+            </label>
+        </nav>
+    </header>
+    <section id="banner">
+        <div class="contenido-banner">
+            <h3><span>Corporacion</span> <br> Empresa financiera</h3>
+            <a href="" class="boton">Conócenos</a>
+        </div>
+    </section>
+    <section id="valores">
+        <div>
+            <img src="Imagenes/icons8-dólar-de-hong-kong-100.png" alt="Dinero nos gusta">
+            <h4>En esta empresa nos gusta el dinero</h4>
+            <p>Sí, nos gusta mucho el dinero eso es el principal valor.</p>
+            <a href="">Saber más</a>
+        </div>
+        <div>
+            <img src="Imagenes/icons8-trabajo-permanente-100.png" alt="Dinero nos gusta">
+            <h4>En esta empresa nos gusta la gente</h4>
+            <p>Sí, nos gusta mucho explotar a la gente.</p>
+            <a href="">Saber más</a>
+        </div>
+
+    </section>
+    <section id="Fondosec">
+        <div class="contact_form">
+
+            <div class="formulario" id="formulario1">
+                <h1>Formulario de contacto</h1>
+                <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
+
+                <!-- Formulario estandar -->
+                <form action="submeter-formulario.php" method="post">
+
+
+                    <p>
+                        <label for="nombre" class="colocar_nombre">Nombre
+                            <span class="obligatorio">*</span>
+                        </label>
+                        <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                    </p>
+
+                    <p>
+                        <label for="email" class="colocar_email">Email
+                            <span class="obligatorio">*</span>
+                        </label>
+                        <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                    </p>
+
+                    <p>
+                        <label for="telefone" class="colocar_telefono">Teléfono
+                        </label>
+                        <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                    </p>
+
+                    <p>
+                        <label for="website" class="colocar_website">Sitio web
+                        </label>
+                        <input type="url" name="introducir_website" id="website" placeholder="Escribe la URL de tu web">
+                    </p>
+
+                    <p>
+                        <label for="asunto" class="colocar_asunto">Asunto
+                            <span class="obligatorio">*</span>
+                        </label>
+                        <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+                    </p>
+
+                    <p>
+                        <label for="mensaje" class="colocar_mensaje">Mensaje
+                            <span class="obligatorio">*</span>
+                        </label>
+                        <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea>
+                    </p>
+
+                    <button type="submit" name="enviar_formulario" id="enviar">
+                        <p>Enviar</p>
+                    </button>
+
+                    <p class="aviso">
+                        <span class="obligatorio"> * </span>los campos son obligatorios.
+                    </p>
+
+                </form>
+            </div>
+        </div>
+
+    </section>
+    <!-- Footer con grid -->
+    <footer class="flexfoot" id="Contacto">
+        <div class="container-grid">
+
+            <div>
+                <h4>Teléfono</h4>
+                <p>629134252</p>
+                <h4>Horarios</h4>
+                <p>Mañanas: 8:30 - 14:30</p>
+                <p>Tardes: 15:30 - 21:30</p>
+                <p>Noches: Descanso para trabajar más.</p>
+            </div>
+            <div>
+                <h4>Redes</h4>
+                <img src="Imagenes/icons8-blog-logo-32.png" alt="">
+                <img src="Imagenes/icons8-instagram-24.png" alt="">
+                <img src="Imagenes/icons8-twitter-30.png" alt="">
+            </div>
+            <div>
+                <h4>Mail</h4>
+                <p>Empresa12412421@mail.com</p>
+                <h4>Otros contactos</h4>
+                <p>Paloma mensajera.</p>
+            </div>
+
+
+        </div>
+    </footer>
+
+
+
+
+
+</body>
+
+</html>
